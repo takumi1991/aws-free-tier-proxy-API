@@ -1,7 +1,7 @@
-export default async function handler(req, res) {
-  return res.status(200).json({
+export default function handler(req, res) {
+  res.status(200).json({
     ok: true,
-    timestamp: Date.now(),
-    message: "Vercel API working"
+    message: "Vercel API working",
+    time: Date.now()
   });
 }
