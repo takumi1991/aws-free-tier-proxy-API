@@ -1,12 +1,7 @@
 {
-  "version": 2,
-  "functions": {
-    "api/free-tier.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
+  "runtime": "nodejs20.x",
   "routes": [
-    { "src": "/", "dest": "/api/free-tier.js" },
-    { "src": "/free-tier", "dest": "/api/free-tier.js" }
+    { "src": "^/free-tier$", "dest": "/api/free-tier.js" },
+    { "src": "^/$", "dest": "/api/free-tier.js" }
   ]
 }
