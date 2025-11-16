@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/free-tier", "dest": "/api/free-tier.js" }
+  ]
+}
